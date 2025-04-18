@@ -1,0 +1,374 @@
+.hero {
+    height: 100vh;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    border: 0.08rem solid #F8F1E5;
+    padding: 2rem;
+    max-width: 80%;
+}
+
+.hero h1 {
+    color: #2C5F2D;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    color: #AF3A00;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.btn-success {
+    background-color: #2C5F2D;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-success:hover {
+    background-color: #438b44;
+    transform: scale(1.02);
+}
+
+.btn-success:active {
+    background-color: #1e7e34;
+    transform: scale(0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .hero-content {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-success {
+        font-size: 0.875rem;
+        padding: 0.625rem 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        padding: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .btn-success {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero-content {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn-success {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+}
+
+
+/* step to start section */
+
+.steps_section {
+    background: #F8F1E5 url("../images/plant-pattern.svg") no-repeat left top;
+    text-align: center;
+    padding: 5rem;
+}
+
+.steps{
+    color: #2C5F2D;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.steps-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    padding: 1.25rem;
+    max-width: 17.5rem;
+    text-align: center;
+}
+
+.step img {
+    width: 12rem;
+    height: auto;
+    margin-bottom: 0.938rem;
+}
+
+.step h3 {
+    color: #AF3A00;
+    font-size: 1.3rem;
+}
+
+.step p {
+    color: #2d572c;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .steps-container {
+        gap: 2rem;
+    }
+
+    .steps_section {
+        padding: 3.5rem;
+    }
+
+    .step img {
+        width: 10rem; 
+    }
+
+    .step h3 {
+        font-size: 1.2rem;
+    }
+
+    .step p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .steps_section {
+        background: #F8F1E5 url(../images/plant-pattern.svg) left top;
+        background-repeat: no-repeat;
+        background-size: 10rem;
+    }
+
+    .steps-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .steps_section {
+        padding: 3rem;
+    }
+
+    .steps {
+        font-size: 1.6rem; 
+        padding-bottom: 1.8;
+    }
+
+    .step {
+        max-width: 80%;
+    }
+
+    .step img {
+        width: 9rem; 
+    }
+
+    .step h3 {
+        font-size: 1.1rem;
+    }
+
+    .step p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .steps_section {
+        background: #F8F1E5 url(../images/plant-pattern.svg) left top;
+        background-repeat: no-repeat;
+        background-size: 6rem;
+    }
+
+    .steps {
+        font-size: 1.3rem; 
+        padding-bottom: 0;
+    }
+
+    .steps-container {
+        gap: 0rem;
+        padding: 0;
+    }
+
+    .step {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .step img {
+        width: 7rem;
+    }
+
+    .step h3 {
+        font-size: 1rem;
+    }
+
+    .step p {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+/* Plants section */
+.plant-section {
+    background-color: #F8F1E5;
+    text-align: center;
+    margin: auto;
+}
+
+.plant-section h2 {
+    color: #AF3A00;
+    padding-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.plant-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding-bottom: 6rem;
+}
+
+.plant-card {
+    flex: 1 1 15rem;
+    max-width: 15rem;
+    text-align: center;
+}
+
+.plant-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.plant-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #AF3A00;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #AF3A00;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.plant-link:hover {
+    background-color: #AF3A00;
+    color: #F8F1E5;
+}
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .plant-container {
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .plant-card {
+        flex: 1 1 12rem;
+        max-width: 12rem;
+    }
+
+    .plant-section h2 {
+        font-size: 2.2rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Mobile View (max-width: 600px) */
+@media (max-width: 600px) {
+    .plant-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .plant-card {
+        max-width: 80%;
+    }
+
+    .plant-section h2 {
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+
+    .plant-link {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+
+/* video section */
+
+
+.video {
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+}
+
+video {
+    display: block;
+    margin-bottom: -0.0625rem;
+}
